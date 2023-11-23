@@ -1,0 +1,40 @@
+@import '../styles/colors';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $header-color;
+    padding: 16px 32px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1, span {
+            font-weight: 700;
+            font-size: 20px;
+            color: $white-color;
+        }
+
+        h1 {
+            margin-left: 24px;
+        }
+
+        span {
+            margin-left: 16px;
+        }
+    }
+}
+
+.header-logo {
+    height: 48px;
+    width: 48px;
+    background: url('../assets/icons/logo.svg') no-repeat center / contain;
+}
+
+.account-logo {
+    height: 48px;
+    width: 48px;
+    background: url('../assets/icons/account.svg') no-repeat center / contain;
+}

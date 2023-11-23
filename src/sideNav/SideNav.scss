@@ -1,0 +1,48 @@
+@import '../styles/colors';
+
+aside {
+    padding: 24px 0px 0px 32px;
+    width: 300px;
+    box-shadow: 0px 0px 5px 0px rgba(168, 168, 168, 0.95);
+    height: calc(100vh - 104px);
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+
+    h2 {
+        font-size: 20px;
+        color: $black-color;
+        margin-bottom: 32px;
+    }
+}
+
+
+nav {
+    ul {
+        list-style-type: none;
+        li {
+            cursor: pointer;
+            font-weight: 600;
+            color: $black-color;
+            font-size: 20px;
+            a, .menuItemLabel {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                text-decoration: none;
+                color: $black-color;
+            
+                p {
+                    margin-left: 16px;
+                }
+            }
+        }
+        .childMenuItems {
+            margin-left: 48px;
+        }
+    }
+}
