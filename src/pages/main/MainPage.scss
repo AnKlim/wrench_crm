@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.main {
+    padding: 32px;
+    text-align: start;
+
+    h2 {
+        font-size: 26px;
+        font-weight: 700;
+        color: $grey-900;
+    }
+
+    p {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $grey-900;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}

@@ -23,13 +23,14 @@ nav {
     ul {
         list-style-type: none;
         li {
-            display: flex;
-            align-items: center;
+            display: grid;
             cursor: pointer;
             font-weight: 600;
             color: $black-color;
             font-size: 20px;
             margin-bottom: 40px;
+            grid-template-rows: 1fr;
+            grid-template-columns:1fr auto;
 
             &:last-child{
                 margin-bottom: 0px;
@@ -56,6 +57,13 @@ nav {
             align-items: center;
             justify-content: space-between;
             margin-right: 20px;
+        }
+
+        .selector {
+            border-radius: 5px;
+            border-left: 4px solid $header-color;
+            border-right: 2px solid $white-color;
+            margin-right: -2px;
         }
     }
 }

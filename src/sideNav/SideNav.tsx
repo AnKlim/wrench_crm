@@ -1,4 +1,4 @@
-import { NavLink, useMatches } from "react-router-dom";
+import { NavLink, useLocation, useMatches } from "react-router-dom";
 import { CalendarIcon } from "../assets/icons/CalendarIcon";
 import { ExitIcon } from "../assets/icons/ExitIcon";
 import { FinanceIcon } from "../assets/icons/FinanceIcon";
@@ -89,12 +89,15 @@ const MenuItemLabel = ({ text, icon }: MenuItemLabelProps) => {
 };
 
 const MenuItem = ({ text, icon, path }: MenuItemProps) => {
+  const { pathname } = useLocation();
+
   return (
     <li key={text}>
       <NavLink to={path}>
         {icon}
         <p>{text}</p>
       </NavLink>
+      {pathname === path && <div className="selector" />}
     </li>
   );
 };

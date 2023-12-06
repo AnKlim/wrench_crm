@@ -52,7 +52,7 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
     <Header />
-    <div className="main">
+    <div className="content">
       <RouterProvider router={router} />
       {/* <BrowserRouter>
        

@@ -6,8 +6,12 @@
   padding: 0;
 }
 
-.main {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    height: calc(100vh - 80px)!important;
+.content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: calc(100vh - 80px)!important;
+}
+
+main {
+  overflow-y: auto;
 }

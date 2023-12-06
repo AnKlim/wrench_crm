@@ -1,4 +1,4 @@
-export * from './MainPage';
+export * from './main/MainPage';
 export * from './SearchPage';
 export * from './TablesPage';
 export * from './CalendarPage';
