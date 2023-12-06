@@ -7,5 +7,7 @@
 }
 
 .main {
-  display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: calc(100vh - 80px)!important;
 }
